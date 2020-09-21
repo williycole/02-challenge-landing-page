@@ -18,10 +18,7 @@ body {
 
 
 
-/* #logo {
-    width: 80%;
-    display: inline;
-} */
+
 
 /* ==========(General Elements)========== */
 
@@ -31,7 +28,15 @@ h2 {
     text-align: center;
     font-size: 1em;
     color:  #fca311ff;
-   
+}
+
+h2:before, 
+h2:after {
+    display: inline-block;
+    content: "";
+    border-top:  #fca311ff solid 2px;
+    width: 2.8rem;
+    margin: 5px 1rem ;
 }
 
 h3 {
@@ -54,7 +59,7 @@ h4 {
 
 
 p {
-    color:   #ffffffff;
+    color: #ffffffff;
     margin: 0 10%;
     text-align: left;
     font-size: .8em;
@@ -66,7 +71,11 @@ section {
     border:  #fca311ff 2px solid;
     margin: 10px 30px;
     background: #1b1b1b75;
- }
+}
+
+textarea {
+    background: ;
+}
 /* ==========(Tablet) */
 @media (min-width:600px){
     section {
@@ -78,6 +87,15 @@ section {
      h2 {
         font-size: 1.5em;
      }
+
+    h2:before, 
+    h2:after {
+        display: inline-block;
+        content: "";
+        border-top:  #fca311ff solid 2px;
+        width: 7rem;
+        margin: 10px 1rem ;
+    }
 
      p {
         font-size: 1.2em;
@@ -99,7 +117,17 @@ section {
 
      h2 {
         font-size: 1.8em;
+        padding: 40px 0;
      }
+
+    h2:before, 
+    h2:after {
+        display: inline-block;
+        content: "";
+        border-top:  #fca311ff solid 4px;
+        width: 5.7rem;
+        margin: 10px 1rem ;
+    }
 
      p {
         font-size: 1.5em;
@@ -298,7 +326,7 @@ a.hover {
     
 }
 
-.service-name {
+.service-box {
     display: block;
     text-align: center;
     background:  #00296bff;
@@ -307,6 +335,9 @@ a.hover {
     margin: 20px 0 20px 0;
     border-radius: 15%;
     border:  #e5e5e5ff solid 2px;
+}
+.service-box:hover {
+    background:  rgba(229, 229, 229, 0.384);
 }
 
 i{  
@@ -335,7 +366,7 @@ i{
          margin: 20px;
      }
      
-     .service-name {
+     .service-box {
          display: block;
          text-align: center;
          background:  #00296bff;
@@ -370,12 +401,12 @@ i{
 
 /* ==========(Desktop) */
 @media (min-width: 1000px){
-    .service-name {
+    .service-box {
         display: block;
         text-align: center;
         background:  #00296bff;
-        width: 50%;
-        padding: 60px 0;
+        width: 60%;
+        padding: 50px 0;
         margin: 3%;
         border-radius: 15%;
         border:  #e5e5e5ff solid 2px;
@@ -449,16 +480,52 @@ i{
 }
 
 .less-margin {
-    margin: 5px 2px;
+    margin: 0;
 }
 
-  
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pieces {
+    padding: 15px;
+    margin: 15px;
+}
+
+button {
+    color: #fca311ff;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background:#00509dff;
+    border:  #fca311ff 2px solid;
+}
+button:hover { 
+    transform: scale(1.1); 
+}
+
+/* ==========(Desktop) */
+@media (min-width:700px){
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10%;
+    }
+}
+
+
+
+
 
 /* ==========(Footer/Contact)========== */
 
 /* ==========(Mobile) */
 footer {
     background-color: #14213e;
+    /* padding-top: 10px ; */
+    margin-top: 30px;
 }
 time {
     display: flex;
@@ -486,6 +553,38 @@ time {
     width: 365px;
 }
 
+   
+table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:  #fca311ff 5px solid;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+tr {
+   
+    font-size: 1em;
+    padding: 20px;
+
+}
+th {
+    color:  #fca311ff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+}
+
+
+td {
+    font-size: 1em;
+    text-align: center;
+    width: 50px;
+    color: #e5e5e5ff;
+}
 
 
 /* ==========(Desktop) */
@@ -514,24 +613,22 @@ time {
         width: 865px;
     }
     
-    table {
+    table, tr {
         border:  #fca311ff 2px solid;
-        width: 100%;
-        height: auto;
-        text-transform: uppercase;
         font-size: 1em;
+        padding: 20px;
+
     }
 
     th {
+        color:  #fca311ff;
         font-size: 2em;
         text-align: center;
         padding: 20px;
     }
 
-
     td {
         font-size: 1.5em;
-        text-align: center;
-        width: 50px;
+        width: 200px;
     }
 }

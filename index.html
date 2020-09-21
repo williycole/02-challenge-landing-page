@@ -16,22 +16,19 @@
 
 <body>
     <header>
-        <!-- <figure id="logo-position">
-            <img src="./images/logo.png" alt="Image of the gyms logo." id="logo">
-        </figure> -->
         <nav>
             <ul>
-                <li><a href="#" target="_blank" class="hover">Home</a></li>
-                <li><a href="#" target="_blank" class="hover">About</a></li>
-                <li><a href="#" target="_blank" class="hover">Services</a></li>
-                <li><a href="#" target="_blank" class="hover">Our Facility</a></li>
-                <li><a href="#" target="_blank" class="hover">Contact</a></li>
+                <li><a href="#hero" class="hover">Home</a></li>
+                <li><a href="#about" class="hover">About</a></li>
+                <li><a href="#services" class="hover">Services</a></li>
+                <li><a href="#facility" class="hover">Our Facility</a></li>
+                <li><a href="#contact" class="hover">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero">
+        <div class="hero" id="hero">
             <figure id="video-container">
                 <h1 id="landing-heading">Iron Mind Fitness</h1>
                 <video id="video" autoplay muted loop>
@@ -41,7 +38,7 @@
             </figure>
         </div>
 
-        <section>
+        <section id="about">
             <article>
                 <h2>About Us</h1>
                     <p>
@@ -60,38 +57,43 @@
             </article>
         </section>
 
-        <section>
+        <section id="services">
             <h2>Services</h1>
                 <ul class="services-list">
-                    <li class="service-name"><i class="fas fa-dumbbell"></i>
+                    <li class="service-box"><i class="fas fa-dumbbell"></i>
                         <h4>Powerlifting-Coaching, Exercise Selection & Exercise Programming</h4>
                     </li>
-                    <li class="service-name"><i class="fas fa-utensils"></i>
+                    <li class="service-box"><i class="fas fa-utensils"></i>
                         <h4>Nutritional Coaching, Meal Planning, Food-Prep Classes</h4>
                     </li>
-                    <li class="service-name"><i class="fas fa-running"></i></i>
+                    <li class="service-box"><i class="fas fa-running"></i></i>
                         <h4>Conditioning, Stamina, and Circit/HIT Training & Coaching </h4>
                     </li>
-                    <li class="service-name"><i class="fas fa-burn"></i>
+                    <li class="service-box"><i class="fas fa-burn"></i>
                         <h4>Coaching for Tracking Calories & Maintaining Progress</h4>
                     </li>
                 </ul>
         </section>
 
-        <section>
+        <section id="facility">
             <h2>Our Facility</h1>
                 <div id="facility-gallery">
-                    <img src="./images/pexels-binyamin-mellish-17840.jpg" class="our-facility-pics">
-                    <img src="./images/pexels-cesar-galeão-3253501.jpg" class="our-facility-pics">
-                    <img src="./images/pexels-shotpot-4047156.jpg" class="our-facility-pics">
-
-                    <img src="./images/pexels-victor-freitas-703014.jpg" class="our-facility-pics">
-                    <img src="./images/pexels-william-choquette-1954524.jpg" class="our-facility-pics">
-                    <img src="./images/pexels-roman-odintsov-4553611.jpg" class="our-facility-pics">
+                    <img src="./images/pexels-binyamin-mellish-17840.jpg" class="our-facility-pics"
+                        alt="Photo of one of the members doing heavy squats.">
+                    <img src="./images/pexels-cesar-galeão-3253501.jpg" class="our-facility-pics"
+                        alt="Photo of one of the members using our giant ropes for conditioning.">
+                    <img src="./images/pexels-shotpot-4047156.jpg" class="our-facility-pics"
+                        alt="Photo of one of the members doing doing incline benchpress.">
+                    <img src="./images/pexels-victor-freitas-703014.jpg" class="our-facility-pics"
+                        alt="Close up of one of our members setting up a bar for cleans.">
+                    <img src="./images/pexels-william-choquette-1954524.jpg" class="our-facility-pics"
+                        alt="Photo of one of the members doing a HIT workouton a treadmill.">
+                    <img src="./images/pexels-roman-odintsov-4553611.jpg" class="our-facility-pics"
+                        alt="Photo of two of our members hanginging out and warming up.">
                 </div>
         </section>
 
-        <section>
+        <section id="contact">
             <article>
                 <h2>Contact</h1>
                     <p class="less-margin">
@@ -99,10 +101,11 @@
                         a consultation and gym tour!
                     </p>
             </article>
-            <form action="https://airform.io/william.cole.boren@gmail.com" method="post" id="contact-form">
-                <input type="text" name="name" placeholder="Enter your name">
-                <textarea name="message" placeholder="Enter your message"></textarea>
-                <button>Send</button>
+            <form action="https://airform.io/william.cole.boren@gmail.com" method="post" id="contact-form"
+                class="form-pieces">
+                <input type="text" name="name" placeholder="Enter your name" class="form-pieces">
+                <textarea name="message" placeholder="Enter your message" class="form-pieces"></textarea>
+                <button class="form-pieces">Send</button>
             </form>
 
         </section>
@@ -111,10 +114,11 @@
         <footer>
             <time>
                 <div class="footer-heading-position">
-                    <h3>Open 24/7/365</h3>
+                    <h3>Open 24-7 / 365</h3>
                 </div>
                 <div class="footer-background-position">
-                    <img src="./images/barbellchalk-1160x700-990x597.jpg" class="footer-background">
+                    <img src="./images/barbellchalk-1160x700-990x597.jpg" class="footer-background"
+                        alt="Close up of a person deadlifting">
                 </div>
             </time>
 
