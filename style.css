@@ -527,6 +527,7 @@ footer {
     /* padding-top: 10px ; */
     margin-top: 30px;
 }
+
 time {
     display: flex;
     flex-direction: column;
@@ -534,6 +535,7 @@ time {
     border:  #fca311ff 2px solid;
     margin: 0px;
 }
+
 .footer-heading-position {
     display: flex;
     flex-direction: row;
@@ -541,6 +543,7 @@ time {
     background-color: #14213e;
      border:  #fca311ff 2px solid;
 }
+
 .footer-background-position {
     display: flex;
     flex-direction: row;
@@ -548,6 +551,7 @@ time {
     background-color: #14213e;
     border:  #fca311ff 2px solid;
 }
+
 .footer-background {
     background-size: contain;
     width: 365px;
@@ -571,6 +575,7 @@ tr {
     padding: 20px;
 
 }
+
 th {
     color:  #fca311ff;
     font-size: 1.5em;
@@ -586,6 +591,13 @@ td {
     color: #e5e5e5ff;
 }
 
+#copy-right, #copy-right p {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
 
 /* ==========(Desktop) */
 @media (min-width:700px){
