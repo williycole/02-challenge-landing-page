@@ -1,0 +1,153 @@
+/* ==========(Standard CSS)========== */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+*, *::before, *::after {
+    /* box-sizing: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+main {
+
+}
+/* ==========(Mobile CSS)========== */
+
+/* #logo {
+    width: 80%;
+    display: inline;
+} */
+
+
+ /* =====(Header/Nav) */
+#video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: rgba(0, 81, 157, 0.541);
+    z-index: 1;
+}
+#video {
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    max-height: 30vh;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #14213dff;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 0em .7em;
+    text-align: center;
+    text-decoration: none;
+    color: #fca311ff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a.hover {
+    display:inline-block;
+    position: relative;
+  }
+
+  .hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0px;
+    background: #e5e5e5ff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+    padding-bottom: 2px; 
+    margin-bottom: 0px;
+  }
+
+  .hover:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+/* =====(Landing/About) */
+#landing-heading {
+    display:inline;
+    position: absolute;
+    z-index: 3;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    color: #fca311ff;
+    font-size: 1.4em;
+}
+
+#landing-heading:before, 
+#landing-heading:after {
+    display: inline-block;
+    content: "";
+    border-top:  #e5e5e5ff solid 2px;
+    width: 2rem;
+    margin: 8px 1rem ;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1em;
+    color:  #fca311ff;
+}
+
+p {
+    margin: 0 10%;
+    text-align: left;
+    font-size: .8em;
+    
+}
