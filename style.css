@@ -442,16 +442,17 @@ i{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
         margin: 0 10%;
+        padding: 5px;
     }
 }
 
-/* ==========(Mobile) */
+/* ==========(Mobile & Desktop) */
 .our-facility-pics {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    width: 95%;
+    padding: 0px;
+    margin: 10px;
     border-radius: 45% 45%;
-    border: rgb(20, 33, 61) solid 10px;
+    border: rgb(20, 33, 61) solid 5px;
 }
 
 
