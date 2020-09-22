@@ -186,7 +186,7 @@ a {
 a.hover {
     display:inline-block;
     position: relative;
-  }
+}
 
 .hover::before {
   content: '';
@@ -202,6 +202,7 @@ a.hover {
   padding-bottom: 2px; 
   margin-bottom: 0px;
 }
+
 .hover:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -241,6 +242,7 @@ a.hover {
     background: rgba(0, 81, 157, 0.541);
     z-index: 1;
 }
+
 #video {
     margin: 0;
     position: relative;
@@ -333,6 +335,7 @@ a.hover {
     border-radius: 15%;
     border:  #e5e5e5ff solid 2px;
 }
+
 .service-box:hover {
     background:  rgba(229, 229, 229, 0.384);
 }
@@ -453,13 +456,6 @@ i{
 
 
 
-/* ==========(Desktop) */
-
-
-  
-
-
-
 
   
 
@@ -499,6 +495,7 @@ button {
     background:#00509dff;
     border:  #fca311ff 2px solid;
 }
+
 button:hover { 
     transform: scale(1.1); 
 }
