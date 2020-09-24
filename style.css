@@ -475,6 +475,7 @@ i{
 
 .less-margin {
     margin: 0;
+    text-align: center;
 }
 
 form {
